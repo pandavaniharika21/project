@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EMPLOYEES>
+  <EMPLOY CATEGORY="PART">
+     <EMPNO>1</EMPNO>
+     <NAME>NIHARIKA</NAME>
+     <BASIC>58221</BASIC>
+  </EMPLOY>
+  <EMPLOY>
+     <EMPNO>2</EMPNO>
+     <NAME>ANUSHA</NAME>
+     <BASIC>58224</BASIC>
+  </EMPLOY>
+</EMPLOYEES>

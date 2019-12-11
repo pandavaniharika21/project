@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<EMPS>
+   <EMP CATEGORY="PART">
+       <EMPNO>1</EMPNO>
+       <NAME>PRASANNA</NAME>
+       <BASIC>82134</BASIC>
+       </EMP>
+   <EMP>
+       <EMPNO>3</EMPNO>
+       <NAME>RAM</NAME>
+       <BASIC>82524</BASIC>
+   </EMP>
+</EMPS>
