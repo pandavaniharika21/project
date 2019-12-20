@@ -1,0 +1,49 @@
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+ http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+
+ <bean id="studentOne" class="com.hcl.wire.Student" scope="prototype">
+ <property name="sno" value="1" />
+  <property name="name" value="niharika" />
+  <property name="lunchBox">
+  <bean class="com.hcl.wire.LunchBox">
+   <property name="snacks" value="pizza.." />
+   </bean>
+   </property>
+   </bean>
+ 
+   <bean id="studentTwo" class="com.hcl.wire.Student" scope="prototype">
+ <property name="sno" value="2" />
+  <property name="name" value="anusha" />
+  <property name="lunchBox">
+  <bean class="com.hcl.wire.LunchBox">
+   <property name="snacks" value="burger.." />
+   </bean>
+   </property>
+   </bean>
+  <bean id="studentThree" class="com.hcl.wire.Student" scope="prototype">
+ <property name="sno" value="3" />
+  <property name="name" value="pravallika" />
+  <property name="lunchBox">
+  <bean class="com.hcl.wire.LunchBox">
+   <property name="snacks" value="chocklet.." />
+   </bean>
+   </property>
+   </bean>
+   
+   <bean id="faculty" class="com.hcl.wire.Faculty" scope="singleton">
+    <property name="fname" value="nithin" />
+     <property name="students">
+     <list>
+      <ref bean="studentOne" />
+      <ref bean="studentTwo" />
+      <ref bean="studentThree" />
+     </list>
+   </property>
+   </bean>
+ 
+ 
+ </beans>
